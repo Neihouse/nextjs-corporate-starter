@@ -8,7 +8,7 @@ import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import {FALLBACK_SEO} from "@/app/[lang]/utils/constants";
-
+import Homepage from '../homepage';
 
 async function getGlobal(lang: string): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN;
@@ -84,7 +84,7 @@ export default async function RootLayout({
         />
 
         <main className="dark:bg-black dark:text-gray-100 min-h-screen">
-          {children}
+          <Homepage />
         </main>
 
         <Banner data={notificationBanner} />
