@@ -4,7 +4,6 @@ note: This project was started with love by [Trecia](https://github.com/TreciaKS
 
 ![demo-site](https://user-images.githubusercontent.com/6153188/231865321-0da5e81f-4832-4cce-bcd1-ecd79e9b9cc3.gif)
 
-
 ## Hello Strapi
 
 Strapi Community Edition is a free and open-source headless CMS enabling you to manage any content, anywhere.
@@ -28,14 +27,13 @@ Strapi Community Edition is a free and open-source headless CMS enabling you to 
 
 You can unlock additional features such as SSO, Audit Logs, Review Workflows in [Strapi Cloud](https://cloud.strapi.io/login?source=github1) or [Strapi Enterprise](https://strapi.io/enterprise?source=github1).
 
-
 ## Getting Started
 
 If you prefer videos that guide you through the setup process you can find them [here](https://github.com/strapi/nextjs-corporate-starter/issues/71)
 
 1. Clone the repository locally:
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCA7TY8YV"}
   git clone https://github.com/strapi/nextjs-corporate-starter.git
     or
   gh repo clone strapi/nextjs-corporate-starter
@@ -43,13 +41,13 @@ If you prefer videos that guide you through the setup process you can find them 
 
 2. Run `setup` command to setup frontend and backend dependencies:
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCC332BWR"}
   yarn setup
 ```
 
 3. Next, navigate to your `/backend` directory and set up your `.env` file. You can use the `.env.example` file as reference:
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCF60N965"}
 HOST=localhost
 PORT=1337
 APP_KEYS="toBeModified1,toBeModified2"
@@ -61,7 +59,7 @@ TRANSFER_TOKEN_SALT=tobemodified
 
 4. Start your project by running the following command:
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCFMEA1N5"}
   yarn build
   yarn develop
 ```
@@ -81,10 +79,9 @@ You can learn more about it in our documentation [here](https://docs.strapi.io/d
 In the root of our project we have our `seed-data.tar.gz` file. We will use it to seed our data.
 
 1. Open up your terminal and make sure you are still in you `backend` folder.
-
 2. Run the following command to seed your data:
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCJB3ZQ34"}
   yarn strapi import -f ../seed-data.tar.gz
 ```
 
@@ -100,7 +97,7 @@ https://github.com/strapi/nextjs-corporate-starter/assets/6153188/80f00bf5-d17b-
 
 Next we need to switch to our `/frontend` directory and create our `.env` file and paste in the following.
 
-```bash
+```bash {"id":"01J55JTWF8M3NP6AXKCK0TS2SA"}
 NEXT_PUBLIC_STRAPI_API_TOKEN=your-api-token
 NEXT_PUBLIC_PAGE_LIMIT=6
 NEXT_PUBLIC_STRAPI_FORM_SUBMISSION_TOKEN=your-form-submission-token
@@ -171,7 +168,7 @@ We can also start both projects with one command using the `concurrently` packag
 
 You can find the setting inside the `package.json` file inside the root folder.
 
-```json
+```json {"id":"01J55JTWF8M3NP6AXKCKX7ECEM"}
 {
   "scripts": {
     "frontend": "yarn dev --prefix ../frontend/",
@@ -187,6 +184,7 @@ You can find the setting inside the `package.json` file inside the root folder.
   }
 }
 ```
+
 Go to the root folder and install the package, `yarn`
 You can start both apps by running `yarn dev`.
 
@@ -225,7 +223,7 @@ Now, go to your version of the repository. You can do this by navigating to http
 
 Next, you need to open your terminal, navigate to where you want to store the project, and type the following command, followed by 'Enter':
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ2V0QVH8X"}
 git clone PASTE_CLONED_REPOSITORY_URL
 ```
 
@@ -235,7 +233,7 @@ Replace 'PASTE_CLONED_REPOSITORY_URL' with the URL you copied earlier. This comm
 
 Before you can start contributing, you have to set up a reference to the original repository. You can do this with the following command:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ2WV5R8QN"}
 git remote add upstream https://github.com/strapi/nextjs-corporate-starter.git
 ```
 
@@ -247,19 +245,19 @@ Before you start making changes, you should synchronize your forked repository w
 
 a. Fetch the branches and their respective commits:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ30JXHY1H"}
 git fetch upstream
 ```
 
 b. Checkout to the main branch of your fork:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ316NKXX6"}
 git checkout main
 ```
 
 c. Merge changes from the upstream's main branch into your local main branch:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ344X8QR4"}
 git merge upstream/main
 ```
 
@@ -269,7 +267,7 @@ This brings your fork's main branch into sync with the upstream repository, with
 
 When you're making a contribution, it's best to make your changes in a new branch instead of the main branch. You can create a new branch and switch to it using the following command:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ35903447"}
 git checkout -b BRANCH_NAME
 ```
 
@@ -283,7 +281,7 @@ Now, you can start making changes to the project. Feel free to make changes that
 
 When you've made your changes, you need to commit them. This is like creating a save point in a game. You can do this using the following commands:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ371NGM0Y"}
 git add -A
 git commit -m "Your detailed commit message"
 ```
@@ -294,7 +292,7 @@ Replace "Your detailed commit message" with a description of the changes you mad
 
 After committing your changes, you need to push them to your forked repository on GitHub. You can do this with the following command:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ399ND1ZZ"}
 git push origin BRANCH_NAME
 ```
 
@@ -318,15 +316,17 @@ Remember, everyone was new to open-source at some point. If you're unsure about 
 
 If you find yourself contributing frequently, we've provided a script in the package.json to help keep your local project synchronized with the main branch of the upstream (original) project. Simply execute the following command:
 
-```bash
+```bash {"id":"01J55JTWF9N33913HZ3D4VR293"}
 yarn repo:upstream
 ```
 
 ## FAQ
 
 ### How do I add additional pages?
+
 Check out [this video](https://youtu.be/EoVrTNA3geM) where I will guide on how to do this.
 
 ### How do I update my Strapi version?
+
 Check out this [this issue comment](https://github.com/strapi/nextjs-corporate-starter/issues/17#issuecomment-1558149967)
 
